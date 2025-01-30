@@ -1,28 +1,34 @@
 const paragraph = document.querySelector('.text');
-const poem = paragraph.textContent;
-
-console.log(poem.length);
+const poem = paragraph.innerHTML;
 
 const result = poem.replace(/;/g, '\n');
-console.log(result);
 
 const substring = result.replace(/\s/g, '');
-console.log(substring);
 
 const newText = result.slice(28, 50);
-console.log(newText);
 
 const replacedText = newText.replace("клён", "дубе");
-console.log(replacedText);
 
 const replacedText2 = result.toUpperCase();
-console.log(replacedText2);
 
 const replacedText3 = result.replace(/клён/g, "дуб");
-console.log(replacedText3);
 
 const index = replacedText3.indexOf('моря');
-console.log(index);
+
+const findLetter = replacedText[0];
+const bigLetter = findLetter.toUpperCase();
+const tail = replacedText.slice(1);
+const modifiedText = bigLetter + tail;
+
+console.log(`1. Количество символов в тексте: ${poem.length}`);
+console.log(`2. Текст с переносами строк: \n ${result}`);
+console.log(`3. Текст с удалёнными пробелами: ${substring}`);
+console.log(`4. Извлечение подстроки: ${newText}`);
+console.log(`5. Замена "клён" на "дубе": ${replacedText}`);
+console.log(`6. Строка result в верхнем регистре: ${replacedText2}`);
+console.log(`7. Замена "клён" на "дуб" (все вхождения) в переменной result: ${replacedText3}`);
+console.log(`8. Индекс первого вхождения "моря": ${index}`);
+console.log(`9. Строка с измененной первой буквой: ${modifiedText}`);
 
 
 
