@@ -1,7 +1,7 @@
 const paragraph = document.querySelector('.text');
 const poem = paragraph.innerHTML;
 
-const result = poem.replace(/;/g, '\n');
+const result = poem.replace(/;/g, ';\n');
 
 const substring = result.replace(/\s/g, '');
 
@@ -29,6 +29,9 @@ console.log(`6. Строка result в верхнем регистре: ${replac
 console.log(`7. Замена "клён" на "дуб" (все вхождения) в переменной result: ${replacedText3}`);
 console.log(`8. Индекс первого вхождения "моря": ${index}`);
 console.log(`9. Строка с измененной первой буквой: ${modifiedText}`);
+
+
+
 
 
 
