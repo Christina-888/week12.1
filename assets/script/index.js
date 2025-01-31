@@ -30,8 +30,49 @@ console.log(`7. Замена "клён" на "дуб" (все вхождения
 console.log(`8. Индекс первого вхождения "моря": ${index}`);
 console.log(`9. Строка с измененной первой буквой: ${modifiedText}`);
 
+const result1 = `1. Количество символов в тексте: ${poem.length}`;
+const paragraph1 = document.createElement('p');
+paragraph1.textContent = result1;
+document.body.appendChild(paragraph1);
 
+const result2 = `2. Текст с переносами строк: \n ${result}`;
+const paragraph2 = document.createElement('p');
+paragraph2.innerText = result2;
+document.body.appendChild(paragraph2);
 
+const result3 = `3. Текст с удалёнными пробелами: ${substring}`;
+const paragraph3 = document.createElement('p');
+paragraph3.innerText = result3;
+document.body.appendChild(paragraph3);
 
+const result4 = `4. Извлечение подстроки: ${newText}`;
+const paragraph4 = document.createElement('p');
+paragraph4.innerText = result4;
+document.body.appendChild(paragraph4);
+
+const result5 = `5. Замена "клён" на "дубе": ${replacedText}`;
+const paragraph5 = document.createElement('p');
+paragraph5.innerText = result5;
+document.body.appendChild(paragraph5);
+
+const result6 = `6. Строка result в верхнем регистре: ${replacedText2}`;
+const paragraph6 = document.createElement('p');
+paragraph6.innerText = result6;
+document.body.appendChild(paragraph6);
+
+const result7 = `7. Замена "клён" на "дуб" (все вхождения) в переменной result: ${replacedText3}`;
+const paragraph7 = document.createElement('p');
+paragraph7.innerText = result7;
+document.body.appendChild(paragraph7);
+
+const result8 = `8. Индекс первого вхождения "моря": ${index}`;
+const paragraph8 = document.createElement('p');
+paragraph8.innerText = result8;
+document.body.appendChild(paragraph8);
+
+const result9 = `9. Строка с измененной первой буквой: ${modifiedText}`;
+const paragraph9 = document.createElement('p');
+paragraph9.innerText = result9;
+document.body.appendChild(paragraph9);
 
 
